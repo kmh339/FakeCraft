@@ -31,7 +31,7 @@ namespace FakeCraft
                 unit.HP--;
             }
 
-            //Console.WriteLine(marine.ToText());
+            Console.WriteLine(unit.ToText());
         }
     }
 }

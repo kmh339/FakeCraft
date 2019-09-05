@@ -7,7 +7,7 @@
             HP = 60;
         }
 
-        public string ToText()
+        public override string ToText()
         {
             return $"I am a firebat and I hava {HP} HP(s)";
         }

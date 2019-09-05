@@ -7,7 +7,7 @@
             HP = 50;
         }
 
-        public string ToText()
+        public override string ToText()
         {
             return $"I am a marine and I hava {HP} HP(s)";
         }
