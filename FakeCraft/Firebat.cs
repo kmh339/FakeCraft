@@ -1,13 +1,11 @@
 ﻿namespace FakeCraft
 {
-    class Firebat
+    class Firebat : Unit
     {
         public Firebat()
         {
             HP = 60;
         }
-
-        public int HP { get; set; }
 
         public string ToText()
         {

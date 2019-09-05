@@ -12,37 +12,26 @@ namespace FakeCraft
             
         static void Main(string[] args)
         {
-            Marine m1 = new Marine();
-            Firebat f1 = new Firebat();
+            // 부모 자리에 자식을 대입 할 수 있음
 
-            TakeRandomDamageForMarine(m1);
-            TakeRandomDamageForFirebat(f1);
+            Unit m1 = new Marine();
+            Unit f1 = new Firebat();
+
+            TakeRandomDamage(m1);
+            TakeRandomDamage(f1);
         }
 
-        static void TakeRandomDamageForMarine(Marine marine)
+        static void TakeRandomDamage(Unit unit)
         {
             int damage = _random.Next(1, 6);
 
             while (damage > 0)
             {
                 damage--;
-                marine.HP--;
+                unit.HP--;
             }
 
-            Console.WriteLine(marine.ToText());
-        }
-
-        static void TakeRandomDamageForFirebat(Firebat firebat)
-        {
-            int damage = _random.Next(1, 6);
-
-            while (damage > 0)
-            {
-                damage--;
-                firebat.HP--;
-            }
-
-            Console.WriteLine(firebat.ToText());
+            //Console.WriteLine(marine.ToText());
         }
     }
 }

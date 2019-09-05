@@ -1,13 +1,11 @@
 ﻿namespace FakeCraft
 {
-    class Marine
+    class Marine : Unit
     {
         public Marine()
         {
             HP = 50;
         }
-
-        public int HP { get; set; }
 
         public string ToText()
         {
