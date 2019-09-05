@@ -12,13 +12,13 @@ namespace FakeCraft
             
         static void Main(string[] args)
         {
-            // 부모 자리에 자식을 대입 할 수 있음
+            List<Unit> units = new List<Unit>();
+            units.Add(new Marine());
+            units.Add(new Marine());
+            units.Add(new Firebat());
 
-            Unit m1 = new Marine();
-            Unit f1 = new Firebat();
-
-            TakeRandomDamage(m1);
-            TakeRandomDamage(f1);
+            for (int i = 0; i < units.Count; i++)
+                TakeRandomDamage(units[i]);
         }
 
         static void TakeRandomDamage(Unit unit)
