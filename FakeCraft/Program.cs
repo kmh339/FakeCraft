@@ -16,6 +16,7 @@ namespace FakeCraft
             units.Add(new Marine());
             units.Add(new Marine());
             units.Add(new Firebat());
+            units.Add(new Zealot());
 
             for (int i = 0; i < units.Count; i++)
                 TakeRandomDamage(units[i]);
@@ -23,13 +24,9 @@ namespace FakeCraft
 
         static void TakeRandomDamage(Unit unit)
         {
-            int damage = _random.Next(1, 6);
+            int damage = _random.Next(1, 5);
 
-            while (damage > 0)
-            {
-                damage--;
-                unit.HP--;
-            }
+            unit.TakeDamage(damage);
 
             Console.WriteLine(unit.ToText());
         }
