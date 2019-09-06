@@ -24,9 +24,8 @@ namespace FakeCraft
 
         static void TakeRandomDamage(Unit unit)
         {
-            int damage = _random.Next(1, 5);
-
-            unit.TakeDamage(damage);
+            //unit.TakeDamage(_random.Next(1, 5));
+            unit.TakeMultipleDamages(_random.Next(1, 5), _random.Next(1, 5), _random.Next(1, 5));
 
             Console.WriteLine(unit.ToText());
         }

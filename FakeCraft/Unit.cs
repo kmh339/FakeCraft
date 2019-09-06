@@ -14,5 +14,11 @@
                 HP--;
             }
         }
+
+        public void TakeMultipleDamages(params int[] damages)
+        {
+            for (int i = 0; i < damages.Length; i++)
+                TakeDamage(damages[i]);
+        }
     }
 }
