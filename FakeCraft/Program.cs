@@ -13,6 +13,10 @@ namespace FakeCraft
         
         static void Main(string[] args)
         {
+            Zealot m = new Zealot();
+            Console.WriteLine(m.Name);
+            return;
+
             List<Unit> units = new List<Unit>();
             units.Add(new Marine());
             units.Add(new Marine());

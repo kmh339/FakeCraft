@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FakeCraft.DarkTemplar" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\ProtossUnits\DarkTemplar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.ProtossUnit" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Units\ProtossUnits\ProtossUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.Zealot" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\ProtossUnits\Zealot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.Firebat" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\TerranUnits\Firebat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.Marine" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\TerranUnits\Marine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.TerranUnit" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\TerranUnits\TerranUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.ZergUnit" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Units\ZergUnits\ZergUnit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FakeCraft.Unit" Collapsed="true">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="FakeCraft.Unit.DeadEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Units\Unit.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAEBAgAQAQAAAAAAAAAAAiAAAAAA=</HashCode>
+      <FileName>Units\Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

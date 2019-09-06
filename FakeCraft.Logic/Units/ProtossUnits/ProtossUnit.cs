@@ -1,18 +1,18 @@
-﻿namespace FakeCraft
-{
-    public class Zealot : Unit
-    {
-        public Zealot()
-        {
-            HP = 100;
-            Shield = 50;
-        }
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace FakeCraft
+{
+    public abstract class ProtossUnit : Unit
+    {
         public int Shield { get; set; }
 
         public override string ToText()
         {
-            return $"I am a zealot and I hava {HP} HP(s) and I have {Shield} shield(s)";
+            return base.ToText() + $" and I have {Shield} shield(s)";
         }
 
         public override void TakeDamage(int damage)

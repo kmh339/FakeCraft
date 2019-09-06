@@ -41,11 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Firebat.cs" />
-    <Compile Include="Marine.cs" />
+    <Compile Include="Units\ProtossUnits\DarkTemplar.cs" />
+    <Compile Include="Units\TerranUnits\Firebat.cs" />
+    <Compile Include="Units\TerranUnits\Marine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Unit.cs" />
-    <Compile Include="Zealot.cs" />
+    <Compile Include="Units\ProtossUnits\ProtossUnit.cs" />
+    <Compile Include="Units\Unit.cs" />
+    <Compile Include="Units\TerranUnits\TerranUnit.cs" />
+    <Compile Include="Units\ZergUnits\ZergUnit.cs" />
+    <Compile Include="Units\ProtossUnits\Zealot.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

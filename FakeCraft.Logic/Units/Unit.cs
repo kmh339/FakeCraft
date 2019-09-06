@@ -6,7 +6,10 @@ namespace FakeCraft
     {
         public int HP { get; set; }
 
-        public abstract string ToText();
+        public virtual string ToText()
+        {
+            return $"I am a {Name} and I hava {HP} HP(s)";
+        }
 
         public virtual void TakeDamage(int damage)
         {
@@ -30,8 +33,16 @@ namespace FakeCraft
                 TakeDamage(damages[i]);
         }
 
+        public string Name
+        {
+            get
+            {
+                return GetType().Name;
+            }
+        }
+
         #region Dead event things for C# 3.0
-public event EventHandler<DeadEventArgs> Dead;
+        public event EventHandler<DeadEventArgs> Dead;
 
 protected virtual void OnDead(DeadEventArgs e)
 {
