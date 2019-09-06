@@ -13,21 +13,28 @@ namespace FakeCraft
         
         static void Main(string[] args)
         {
-            Zealot m = new Zealot();
-            Console.WriteLine(m.Name);
-            return;
-
             List<Unit> units = new List<Unit>();
-            units.Add(new Marine());
             units.Add(new Marine());
             units.Add(new Firebat());
             units.Add(new Zealot());
+            units.Add(new DarkTemplar());
+            units.Add(new Wraith());
+            units.Add(new Carrier());
 
-            for (int i = 0; i < units.Count; i++)
-                units[i].Dead += Unit_Dead;
+            foreach (Unit unit in units)
+                unit.Dead += Unit_Dead;
 
-            for (int i = 0; i < units.Count; i++)
-                TakeRandomDamage(units[i]);
+            foreach (Unit unit in units)
+                TakeRandomDamage(unit);
+
+
+            foreach (Unit unit in units)
+            {
+                if (unit is IFlyable)
+                    FlyBy((IFlyable)unit, 1, 2, 3, 4);
+                if (unit is ICloakable)
+                    Cloak((ICloakable)unit);
+            }
         }
 
         private static void Unit_Dead(object sender, Unit.DeadEventArgs e)
@@ -43,6 +50,18 @@ namespace FakeCraft
             unit.TakeDamage(damage);
             
             Console.WriteLine(unit.ToText());
+        }
+
+        static void FlyBy(IFlyable unit, int x1, int y1, int x2, int y2)
+        {
+            // duck typing
+            unit.Fly(x1, y1);
+            unit.Fly(x2, y2);
+        }
+
+        static void Cloak(ICloakable unit)
+        {
+            unit.Cloak();
         }
     }
 }
