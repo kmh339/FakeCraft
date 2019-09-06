@@ -28,14 +28,16 @@ namespace FakeCraft
 
         private static void Unit_Dead(object sender, Unit.DeadEventArgs e)
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{sender} has died with {e.RemainingDamage} damage(s)");
         }
 
         static void TakeRandomDamage(Unit unit)
         {
-            //unit.TakeDamage(_random.Next(1, 5));
-            unit.TakeMultipleDamages(_random.Next(1, 5), _random.Next(1, 5), _random.Next(1, 5));
+            int damage = _random.Next(50, 150);
+            Console.Write($"[{damage}] ");
 
+            unit.TakeDamage(damage);
+            
             Console.WriteLine(unit.ToText());
         }
     }

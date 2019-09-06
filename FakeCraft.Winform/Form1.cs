@@ -23,15 +23,10 @@ namespace FakeCraft.Winform
         private void Button1_Click(object sender, EventArgs e)
         {
             Marine m = new Marine();
-            m.OnDead = Unit_Dead;
+            //m.Dead += Unit_Dead;
             m.TakeDamage(70);
 
             MessageBox.Show($"HP is {m.HP}");
-        }
-          
-        void Unit_Dead(int remainingDamage)
-        {
-            MessageBox.Show($"I am dead with {remainingDamage} damage(s)");
         }
     }
 }
