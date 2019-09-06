@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FakeCraft
+﻿namespace FakeCraft
 {
-    class Zealot : Unit
+    public class Zealot : Unit
     {
         public Zealot()
         {

@@ -1,8 +1,12 @@
-﻿namespace FakeCraft
+﻿using System;
+
+namespace FakeCraft
 {
-    abstract class Unit
+    public abstract class Unit
     {
         public int HP { get; set; }
+
+        public Action<int> OnDead;
 
         public abstract string ToText();
 
@@ -10,6 +14,12 @@
         {
             while (damage > 0)
             {
+                if (HP == 0)
+                {
+                    OnDead(damage);
+                    break;
+                }
+
                 damage--;
                 HP--;
             }

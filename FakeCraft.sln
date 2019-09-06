@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeCraft", "FakeCraft\FakeCraft.csproj", "{18E4A83C-2307-476E-8F30-D7C32C88D891}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeCraft.Winform", "FakeCraft.Winform\FakeCraft.Winform.csproj", "{0F1C5C34-3B58-41B8-B26A-C6E5C15F580F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeCraft.Logic", "FakeCraft.Logic\FakeCraft.Logic.csproj", "{3850BFFA-EEF4-4F5A-939B-C2C201F5F323}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{18E4A83C-2307-476E-8F30-D7C32C88D891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18E4A83C-2307-476E-8F30-D7C32C88D891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18E4A83C-2307-476E-8F30-D7C32C88D891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1C5C34-3B58-41B8-B26A-C6E5C15F580F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1C5C34-3B58-41B8-B26A-C6E5C15F580F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1C5C34-3B58-41B8-B26A-C6E5C15F580F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1C5C34-3B58-41B8-B26A-C6E5C15F580F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3850BFFA-EEF4-4F5A-939B-C2C201F5F323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3850BFFA-EEF4-4F5A-939B-C2C201F5F323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3850BFFA-EEF4-4F5A-939B-C2C201F5F323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3850BFFA-EEF4-4F5A-939B-C2C201F5F323}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

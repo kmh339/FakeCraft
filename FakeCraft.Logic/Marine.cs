@@ -1,6 +1,6 @@
 ﻿namespace FakeCraft
 {
-    class Marine : Unit
+    public class Marine : Unit
     {
         public Marine()
         {

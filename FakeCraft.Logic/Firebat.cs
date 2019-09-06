@@ -1,6 +1,6 @@
 ﻿namespace FakeCraft
 {
-    class Firebat : Unit
+    public class Firebat : Unit
     {
         public Firebat()
         {
