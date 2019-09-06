@@ -10,11 +10,7 @@ namespace FakeCraft
     {
         static Random _random = new Random();
           
-        static void Unit_Dead(int remainingDamage)
-        {
-            Console.WriteLine($"I am dead with {remainingDamage} damage(s)");
-        }
-
+        
         static void Main(string[] args)
         {
             List<Unit> units = new List<Unit>();
@@ -24,10 +20,15 @@ namespace FakeCraft
             units.Add(new Zealot());
 
             for (int i = 0; i < units.Count; i++)
-                units[i].OnDead = Unit_Dead;
+                units[i].Dead += Unit_Dead;
 
             for (int i = 0; i < units.Count; i++)
                 TakeRandomDamage(units[i]);
+        }
+
+        private static void Unit_Dead(object sender, Unit.DeadEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         static void TakeRandomDamage(Unit unit)
